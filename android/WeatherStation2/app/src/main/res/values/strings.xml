@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Weather Station</string>
+    <string name="primary_info_title">Sensor model</string>
+    <string name="secondary_info_title">Last measure</string>
+    <string name="battery_primary_title">Battery voltage</string>
+
+    <string name="humidity_sensor_model">Si7021 (+/- 2%)</string>
+    <string name="temperature_sensor_model">bmp180 (+/- 0.5°C)</string>
+    <string name="pressure_sensor_model">bmp180 (+/- 1hPa)</string>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string-array name="Languages">
+        <item>English </item>
+        <item>Deutsch</item>
+        <item>Italiano</item>
+    </string-array>
+
+    <string-array name="Temp_units">
+        <item>Celsius (C°)</item>
+        <item>Fahrenheit (F°)</item>
+    </string-array>
+
+    <string-array name="pres_units">
+        <item>HectoPascal (hPa)</item>
+        <item>Atmosphere (Atm)</item>
+    </string-array>
+
+    <string-array name="MAC_address_alias">
+        <item>AB:60:86:56:34:02</item>
+        <item>98:D3:32:10:84:60</item>
+    </string-array>
+
+    <string-array name="MAC_address">
+        <item>SPP Bluetooth</item>
+        <item>HC-05 Weather Station</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="Temperature_layout">#9B2FF5</color>
+    <color name="humidity_layout">#F44336</color>
+    <color name="pressure_layout">#40C4FF</color>
+    <color name="battery_layout">#76FF03</color>
+
+    <color name="connectedColor">#388E3C</color>
+    <color name="disconnectedColor">#616161</color>
+
+    <color name="text_color">#111111</color>
+    <color name="sec_text_color">#8C111111</color>
+</resources>

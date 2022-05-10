@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dim_value_margin_left">3dp</dimen>
+    <dimen name="dim_values_text">40dp</dimen>
+    <dimen name="dim_pressure_text">33dp</dimen>
+
+    <dimen name="dim_info_margin_top">10dp</dimen>
+    <dimen name="dim_info_margin_top_sec">-10dp</dimen>
+    <dimen name="dim_info_prim_text">15dp</dimen>
+    <dimen name="dim_info_sec_text">12dp</dimen>
+</resources>

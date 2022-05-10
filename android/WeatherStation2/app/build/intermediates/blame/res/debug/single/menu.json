@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/enricocirignaco/AndroidStudioProjects/WeatherStation2/app/build/intermediates/res/merged/debug/menu/menu_activity.xml",
+        "source": "/Users/enricocirignaco/AndroidStudioProjects/WeatherStation2/app/src/main/res/menu/menu_activity.xml"
+    },
+    {
+        "merged": "/Users/enricocirignaco/AndroidStudioProjects/WeatherStation2/app/build/intermediates/res/merged/debug/menu/menu_activity_2.xml",
+        "source": "/Users/enricocirignaco/AndroidStudioProjects/WeatherStation2/app/src/main/res/menu/menu_activity_2.xml"
+    }
+]

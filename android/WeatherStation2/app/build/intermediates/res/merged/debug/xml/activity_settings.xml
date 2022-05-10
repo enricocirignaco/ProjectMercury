@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+
+
+        <ListPreference
+            android:key="pref_temperature_key"
+            android:title="Temperature units"
+            android:entries="@array/Temp_units"
+            android:entryValues="@array/Temp_units"
+            />
+
+        <ListPreference
+            android:key="pref_pressure_key"
+            android:title="Pressure units"
+            android:entries="@array/pres_units"
+            android:entryValues="@array/pres_units"
+            />
+
+        <ListPreference
+            android:key="pref_language_key"
+            android:title="Language"
+            android:entries="@array/Languages"
+            android:entryValues="@array/Languages"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Altitude">
+
+        <CheckBoxPreference
+            android:key="pref_default_altitude_key"
+            android:disableDependentsState="true"
+            android:title="Set default Altitude"
+            />
+
+        <EditTextPreference
+            android:title="Set Altitude Manually"
+            android:dependency="pref_default_altitude_key"
+            android:hint="AltitudeInMeters"
+            android:dialogMessage="Example: 700"
+            />
+
+        <Preference
+            android:title="Set Altitude with GPS"
+            android:dependency="pref_default_altitude_key"
+            />
+
+        <EditTextPreference
+            android:title="Change default altitude"
+            android:hint="AltitudeInMeters"
+            android:dialogMessage="Example: 700"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Device">
+
+        <ListPreference
+            android:key="pref_MACAddress_key"
+            android:title="Set device's MAC address"
+            android:entries="@array/MAC_address"
+            android:entryValues="@array/MAC_address_alias"
+            />
+
+        <EditTextPreference
+            android:title="Add new MAC address"
+            android:hint="MAC_address+Device_name"
+            android:dialogMessage="Example:\nAB:60:86:56:34:02+SPP Bluetooth"
+            />
+
+        <ListPreference
+            android:title="Delete MAC address"
+            android:entries="@array/MAC_address"
+            android:entryValues="@array/MAC_address_alias"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Other">
+
+        <Preference
+            android:title="Reset"
+            android:summary="Delete all application data"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

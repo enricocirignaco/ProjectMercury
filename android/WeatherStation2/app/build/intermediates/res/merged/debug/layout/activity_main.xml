@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.enricocirignaco.weatherstation2.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.Toolbar
+
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/Temperature_layout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/temperature_value_id"
+            android:text="null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_value_margin_left"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dim_values_text"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/temperature_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top"
+                android:text="@string/primary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:text="@string/temperature_sensor_model"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/secondary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/last_temperature_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/humidity_layout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/humidity_value_id"
+            android:text="null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_value_margin_left"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dim_values_text"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/humidity_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top"
+                android:text="@string/primary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:text="@string/humidity_sensor_model"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/secondary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/last_humidity_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/pressure_layout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/pressure_value_id"
+            android:text="null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_value_margin_left"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dim_pressure_text"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/pressure_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top"
+                android:text="@string/primary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:text="@string/pressure_sensor_model"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/secondary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/last_pressure_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/battery_layout"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/battery_value_id"
+            android:text="null"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dim_value_margin_left"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/dim_values_text"
+            />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/battery_icon"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top"
+                android:text="@string/battery_primary_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/battery_voltage_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="@string/secondary_info_title"
+                android:textSize="@dimen/dim_info_prim_text"
+                android:textColor="@color/text_color"
+                />
+
+            <TextView
+                android:id="@+id/last_battery_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim_info_margin_top_sec"
+                android:textSize="@dimen/dim_info_sec_text"
+                android:textColor="@color/sec_text_color"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
